@@ -1,0 +1,2 @@
+selecttic-->eneter secret code to show tic (encry tic pass->crct original tic)
+check validate trans code

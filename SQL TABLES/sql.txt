@@ -1,0 +1,83 @@
+CREATE TABLE cust (
+    custid varchar2(25) NOT NULL ,
+    custname varchar2(25) NOT NULL,
+    custusername varchar2(25) NOT NULL, password varchar2(20),address varchar2(40),
+    phone varchar2(12), amount varchar2(25), email varchar2(25), gender varchar2(7),
+    PRIMARY KEY (custid)
+);
+
+create table transaction(
+custid varchar2(25) , transid varchar2(25) , info varchar2(40),amount varchar2(25),datetime varchar2(40),
+ PRIMARY KEY (transid),
+    FOREIGN KEY (custid) REFERENCES cust(custid)
+);
+
+create table tictable(
+transid varchar2(25) , tic varchar2(20),
+    FOREIGN KEY (transid) REFERENCES transaction(transid)
+);
+
+create table entictable(
+transid varchar2(25) , encrytic varchar2(50)
+);
+
+
+
+ desc cust
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CUSTID                                    NOT NULL NUMBER(38)
+ CUSTNAME                                  NOT NULL VARCHAR2(25)
+ USERNAME                                  NOT NULL VARCHAR2(25)
+ PWD                                                VARCHAR2(20)
+ ADDRESS                                            VARCHAR2(40)
+ PHONE                                              NUMBER(38)
+ AMOUNT                                             NUMBER(38)
+ EMAIL                                              VARCHAR2(40)
+ GENDER                                             VARCHAR2(7)
+
+ desc transaction
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CUSTID                                             VARCHAR2(25)
+ TRANSID                                   NOT NULL VARCHAR2(25)
+ INFO                                               VARCHAR2(40)
+ AMOUNT                                             VARCHAR2(25)
+ DATETIME                                           VARCHAR2(40)
+
+SQL> desc tictable
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ TRANSID                                            NUMBER(38)
+ TIC                                                VARCHAR2(20)
+
+insert into transaction values('1340','1','Movie','211','13-12-2020 10:47pm');
+
+insert into tictable values('1','73905677');
+insert into tictable values('2','40524674');
+insert into tictable values('1','80406889');
+insert into tictable values('1','25118337');
+insert into tictable values('1','97048039');
+insert into tictable values('1','21063145');
+insert into tictable values('1','75394220');
+insert into tictable values('1','82557841');
+insert into tictable values('1','87028192');
+insert into tictable values('1','25191860');
+insert into tictable values('1','64032209');
+insert into tictable values('1','82100311');
+insert into tictable values('1','90676018');
+
+insert into entictable values('1','H7A9fkG/NW7Uowi/Y32cgK5v+9TpSjTQX0RQvDZRUiA=');
+insert into entictable values('2','mx1znkLoxzIwuyyPD851vEZEyFsV+Y7jiBgO3SLIOT4=');
+insert into entictable values('1','0d0oefPKYS6xkqHz4aPTpyq8yTzGzvBG3sLRL5m7BUo=');
+insert into entictable values('2','NimTDe4hNzjbXzxNzWZidl1VYRa1yJwOf4cTP/UsQrQ=');
+
+delete from tictable where ROWNUM=1;
+
+
+-> Create table merchant(M_ANO Number(10), M_BankName Varchar2(20), M_BankCode number(10), CNo number(10), M_ID number(10), M_Name varchar2(20), M_Address varchar(20));
+
+insert into merchant(123456, SBI, 2222,1234,100, SUJITH, AMARAVATHI);
+
+insert into merchant(98765, SBI, 2222,4321,100, lohya, AMARAVATHI);
+

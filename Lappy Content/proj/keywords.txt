@@ -1,0 +1,20 @@
+(springler)
+SET secure electronic set
+TIC transaction identification code
+Online transaction/payments
+
+
+3factore auth-https://ieeexplore.ieee.org/document/8356384.
+2 factor - https://ieeexplore.ieee.org/document/5069395
+
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8701353
+
+https://patentimages.storage.googleapis.com/72/48/2b/771c690320fa7b/US20050143051A1.pdf
+
+https://www.tifr.res.in/~sanyal/papers/Multifactor%20Secure%20Authentication.pdf
+
+https://d1wqtxts1xzle7.cloudfront.net/33551175/IJETAE_1211_02.pdf?1398383120=&response-content-disposition=inline%3B+filename%3DDES_AES_and_Blowfish_Symmetric_Key_Crypt.pdf&Expires=1599743684&Signature=WpOl82iAVZYHlzgJi4pBnHzVUdcguF8Oqog3nB1TjzfGD7P9X1hk-Ue7ILVGgGbHmUDWz7g7ALwKvs2YGUeXt5F5LB1W5zQJPcgySIa9ySuhkdDTMbSWMNy73rKx7-Xl1A7S1~uoOutd7A9C-mslx2s~1IEp4iqPeSKtTz5QLxxKEXVaEdQ2vra7mUIm2rJGROw5IoW4zBbRtgzpYSovI3b2UUfLcGzcmoW8nSqnZYPxU1pAuv7IzIDYKKcpQ5G~xIG8-VJ-fIXrd0EIDiVUHl2JzqQSMpDDr4dKtfZ5aKxXNeQUJh5qTeRb~i3IWz3zYtLl-ASLzYlXP6ym6Sq1Xw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
+
+https://patentimages.storage.googleapis.com/a3/05/ed/e476c9ce65dc6e/US20130124364A1.pdf
+
+https://computerresearch.org/index.php/computer/article/view/272/272

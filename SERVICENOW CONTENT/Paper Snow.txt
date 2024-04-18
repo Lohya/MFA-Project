@@ -1,0 +1,167 @@
+GENERATION OF ONE TIME PASSWORD BY USING SERVICENOW PLATFORM
+
+
+ABSTRACT:
+
+
+ServiceNow is a tool that tasks customer responses and requests. A request can be raised which contains issues and these problems can be solved using ServiceNow. Service now
+is PaaS (Platform as a Service) issuing support to the technical management in corporate societies. PAAS is a full satellite
+creation and implementation landscape with options that allow customers to provide that much from basic moon widgets to complex business applications that are zip archive.
+Servicenow helps perform workflow operations in business implementations.ServiceNow can be used for many automation processes and the generation of OTP(one time password) is one of them The generation of OTP will be implemented by using Notifications, Event registry & Business rules. The process of generating OTP will be explained in this paper .
+Keywords
+ServiceNow, Notifications, Event Registry , Business Rules.
+
+
+INTRODUCTION:
+ServiceNow provides features like flexibility and power to
+attain the main objective of project management. In
+ServiceNow, a user can select an interface which he likes and
+it provides detailed information about the interface the user is
+working on. ServiceNow is cloud infrastructure that simplifies
+solutions for corporate automation, providing better
+interactions for consumers and employees. It is a solution
+which uses an advanced service management approach to
+move the company to the cloud even faster. The program
+provides an on-demand service ecosystem that optimizes the
+usage of the cloud while reducing infrastructure costs and
+standardizing service requests, permissions, and cloud
+resource configuring. It stimulates the distribution of cloud
+services through a centralized, self-service user interface that
+uses a single method of action to further streamline cloud
+operations. Users can make management choices based on
+their provided business resources through the use of
+ServiceNow.
+ServiceNow's benefits improve outstanding service
+and establish an on-demand service ecosystem that optimizes
+the usage of the cloud, lowers resource costs, automates
+service demands, and delivers cloud services. It offers server
+management for VMware, Amazon Cloud, and Microsoft
+Azure environments, making it versatile for customers of
+ServiceNow. The consistency of the results, portability,
+monitoring, its constant cost model, training and management,
+and much more are some of the benefits of using ServiceNow.
+For facilities executives working in IT, it is also a
+comprehensive facility management approach. It provides
+ServiceNow consumers with a reliable approach that allows
+executives to tackle challenging organizational priorities for
+company stability, efficiency, and employee productivity. The
+best decision would be if you are on a watch to keep in touch
+with the clients on the ServiceNow client list. Almost every
+small scale and large scale companies use ServiceNow.
+Around 51,000 users are on Now learning platform.
+Using Servicenow we can develop an application in
+less amount of time. Servicenow instance page consists of
+three frames:
+i) Banner Frame: This frame has options like connect,
+magnifying symbol, help (to search document), gear icon
+(settings option).
+Scope in Servicenow - The scope helps the administrators to
+preserve their applications by limiting entry to few application
+files. The default scope in Servicenow is “Global”. Scope
+provides security and authentication.
+ii) Application Navigator Frame: This frame consists of filter
+navigator, application menus and modules. In Servicenow,
+every table that we create is stored as modules and everything
+that we create in Servicenow is a “Table”
+iii) Content Frame: This frame consists of home page,
+dashboards, forms, lists, knowledge base and service
+catalogues.
+Servicenow Studio
+Studio is the platform or center place where we create
+applications and different artifacts like creation of the table,
+client side and server side scripting. Applications developed
+in studio are called as “Scoped Applications”.
+Servicenow Instances
+ServiceNow uses a single tenant model, which ensures that
+every other client in the cloud receives one's own replica or
+several versions of ServiceNow. These versions are identified
+as instances of ServiceNow.
+Types of instances
+i) Developer instance – This instance is used only for practice
+and available for everyone (one particular user only). This
+instance will go to hibernation if it is not active for few days
+(Eg: dev1234.service-now.com).
+ii) Production instance – Companies will purchase these
+instances from ServiceNow (accessible for all employees).
+One company has one production instance (Eg:
+xyzcompany.service-now.cometc). This instance will never be
+expired i.e., cannot hibernate.
+iii) Testing instance – This is the instance which is used to test
+the applications developed in ServiceNow platform.
+
+NOTIFICATION::
+
+Notification in servicenow it provides specific types of services like EMAIL, PUSH, SMS(Direct Message) for the management of team members and contractors who are working as the group of members for the development of any project/ Application. it can be used to inform any updates or any changes that are required to include or indulge in any specific section that they are currently working on. We can send a notification in 2 ways that is 1) inserted or Updated 2)Event Based 
+
+The First Way which is Inserted or Updated will be working whenever a record is inserted or updated in the Form 
+
+The Second way which is Event based will be triggered whenever a record is inserted and the event which is Linked to The table that we have created.
+
+
+Since a basic idea about the topic is done, the following
+section of the paper deals with the architecture and procedure.
+
+
+PROCEDURE:
+
+2.1) Creation of Table:
+
+ A new Table " User Details Email Generation" is created with the Fields Name(String), email-id(String) and Submit the Table . After Submitting the table refresh the instance page and check whether the table is created or not with the fields that we have given or not.
+
+
+2.2) Creation of Event :
+
+Events registry is a list of the events that the device is aware of. Other operations, such as script actions or alerts, may be automated using recorded events.when we create an event
+the business rule that uses the event must activate it to the further process Activation/Registration of the business rule in the event lets others as Email Notifications and Script Actions, see the event in their list of available events and react to the event when it occurs.
+In studio create application file and search for event registry and create it and give the suffix as "randomnumber" under the table "User Details Email Generation" and submit it 
+
+
+
+2.3) Creation of Business Rule
+
+A business rule is a script on the server side that runs anytime
+a record is viewed, added, modified, removed, or queried
+from a table. Server scripts run on a computer or server. When
+documents and tables are accessed or updated, they can alter
+the appearance or actions of ServiceNow or act as business rules. Application Programming Interfaces (APLI) server-side Glide offers specifications that you can use to execute serverside functions in scripts. Company rules are used to execute activities such as automatically modifying values in the required fields when other parameters are reached, or to build email update events and script actions. Now open studio, create a business rule for  "User Details Email Generation" table. Name the business rule as “BR1” and tick the checkbox for “Advanced” field. At the bottom of the business rule page, go to the advanced tab and Give the Code as:
+
+ (function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var x = Math.floor((Math.random() * 90000) + 100001);
+	gs.info('Random: '+ x);
+	gs.eventQueue('x_473281_final_yea.randomnumber',current,x,'');
+	gs.info('Random');
+
+})(current, previous);
+
+2.4)Creation of Notification:
+
+
+Notifications are used for the updation of any process or informing about the updates are to follow up for the next step in any process or automation of any workflow.
+ In Studio page create a notification named OTP Generator for the table "User Details Email Generation" and Under "WHEN TO SEND" tab  select the option called as "Event is fired" for "SendWhen" tab and select the event name that we have created previously 
+and under "WHO WILL RECEIVE" tab select the users/groups in fields and select email field.
+Under "WHAT WILL CONTAIN" tab give the subject and message as your requirement and the OTP generator field is ${mail_script:add_random_number}This is the field which will generate a random number for every submission of a form.
+
+
+
+3) Architecture::
+
+
+1)User Fills the Form with his Name, Email ans submits the form
+2)After Submitting the form, An event will be Fired
+3)The Business Rule which uses the Event is now registered and activated for further step and the Generation of OTP is Done within the business rule as the script is executed.
+4)The Notifications/Alerts which are connected with the business rule carries the OTP that was generated in the Script and will be sent to Email of the User
+5)User will be entering the OTP for secured Transaction
+
+4) Results:
+
+Screenshots pettali
+
+5) Conclusion :
+One Time password for every payment throughout the life cycle of the transaction/payment is important and need to be secure. ServiceNow provides highly resilient and secure cloud-based services to customers all over the world. The security of the infrastructure and data is paramount - a foundational requirement. The Generation of one time password for the secure transactions can also be implemented in servicenow. Servicenow will have a greater impact on further upcoming projects.
+
+
+
+
+

@@ -1,0 +1,65 @@
+
+SERVICENOW OTP GENERATION
+
+
+STUDIO-> CREATE APPLICATION-> FINAL YEAR PROJECT
+
+Create Application file-> Table-> Create-> User Details.....
+ 3 Columns:: Name(String), TIC code(Integer), Email( String)
+Now,
+In Instance page change Scope from working to GLOBAL....and check the status of email properties and email
+diagnostics....
+
+-> In studio Create Application File-> Event select it and create it 
+Name: randomnumber
+Table: User Details (which we have been created)
+
+
+
+BRIEFING ABOUT EVENT:
+
+ ??
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+->In Studio Create Application File->Notification and select it and create it....
+ Name:OTP Generator
+ Table: User Details
+
+WHEN TO SEND::::
+-------------------
+Send When: Event is fired
+Event Name: Created event name
+
+WHO WILL RECEIVE::::
+---------------------
+Users/Groups: click on lock button and add email to list and lock it..
+
+WHAT IT WILL CONTAIN:::
+
+${mail_script:add_random_number} is the field which generates the random number & Give message as Your Wish..
+
+
+
+
+PLZ GIVE A BRIEF ABOUT THAT FIELD:
+?????
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Business Rule:
+ 
+Create it and name it as BR1 with tha table that we have created and in the advanced tab give the script as
+
+(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var x = Math.floor((Math.random() * 90000) + 100001);
+	gs.info('Random: '+ x);
+	gs.eventQueue('x_473281_final_yea.randomnumber',current,x,'');
+	gs.info('Random');
+
+})(current, previous);
+
+
+PLZ GIVE A BRIEF ABOUT THE SCRIPT:
+?????
+

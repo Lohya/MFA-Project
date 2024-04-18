@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+body{
+background-color:black;
+color:white;
+}
+button{
+padding:13px 10px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: grey;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+.navbar a:hover {
+  background-color: black;
+}
+
+
+</style>
+<title>Login Page (1FA)</title>
+</head>
+<body>
+<center>
+<BR><BR>
+
+<div class="navbar">
+  <a href="#home"  onclick="location='home.html' ">Home</a>
+</div>
+<H3>LOGIN</H3>
+<img src="207-2070782_new-svg-image-login-icon.png">
+<br>
+<br>
+<br>
+
+<form action="./custlogin.jsp" method=post>
+User-Id:<input type="text" name="id">
+<br>
+<br>
+Password:<input type="password" name="pwd">
+<br>
+<br>
+<input type="submit" value="login">
+</form>
+</center>
+</body>
+</html>

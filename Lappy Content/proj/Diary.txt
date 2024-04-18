@@ -1,0 +1,160 @@
+						PROJECT-281 DIARY:
+
+8/8/2020 - Welcome Meet with guide 
+
+21/8/2020 - Discussion of our term paper with guide
+
+24/8/2020 - Intro to AGILE and GIT
+
+25/8/2020 - Working with a demo project in GIT
+
+1/9/2020 - Discussion of title with guide
+
+2/9/2020 - Searching of IEEE papers related to title
+
+5/9/2020 - Worked on Online Banking Frauds,& Introduction to existing system
+
+6/9/2020- Discussion about Factors of Authentication
+
+7/9/2020 - Started Working on abstract
+
+9/9/2020 - Submission of abstract
+
+10/9/2020 - Discussion of architecture and specification
+
+12/9/2020 - Working on Protocol 
+
+20/9/2020 - Analysis of Trasaction flow and threats
+
+22/9/2020 - Started to consolidate our research work into literature survey
+
+25/9/2020 - Completed with 2 modules survey
+
+27/9/2020 - Completed with 3 modules survey
+
+29/9/2020- Completed with all modules of survey
+
+30/9/2020 - Consolidating all module suverys into  single literature survey 
+
+3/10/2020 - Submission of survey to guide
+
+5/10/2020 - Started to work on System Specification and Architecture
+
+7/10/2020 - Worked on mode of payments and Designing or modification  of protocol accordingly
+
+10/10/2020 - Discussuion Multifactor Authetication process
+
+13/10/2020 - Flow of protocol
+
+18/10/2020 - Working on TIC Codes related
+
+21/10/2020 - Discussion of threat analysis of the designed flow of protocol
+
+23/10/2020 - Security concerns regarding protocol
+
+28/10/2020 - Division of protocol execution flow into 4 steps
+
+1/11/2020 - Part I: First Authentication of User to the Bank Authentication Server
+
+3/11/2020 - Part II: Two Way Authentication: Authentication of Merchant to the Customer
+
+6/11/2020 - Part III: Second Authentication of User to the Bank Authentication Server
+
+9/11/2020 - Part IV: Third Authentication of User by SMS confirmation of Web Transaction to the Bank Authentication Server
+
+12/11/2020 -Started  to Wrap our work into research paper
+
+27/11/2020 - Reviewing of Paper by Guide
+
+28/11/2020 - Started to design the demo of flow of execution of the protocol as a Java Enterprise Project
+
+29/11/2020 - Design of requirements i.e what are the technologies/Softwares/Tools required?? 
+
+30/11/2020 - Listing the requirments of Softwares/Tools
+
+30/11/2020 - Listing of required FrontEnd and Backend pages
+
+2/12/2020 - Database Tables required , installation and mapping of JAR files / paths as per requirement
+
+5/12/2020 - Started working on the design of front-end pages , Backend pages and updation of the Report Parellely
+
+7/12/2020 - Worked on ServiceNow for Email notifications
+
+8/12/2020 - Review of work and took suggestions from guide
+
+9/12/2020 - Worked on Suggestions of Guide on implementation
+
+11/12/2020- Submit the paper to guide
+
+13/12/2020- Review from the Guide about the Research paper
+
+15/12/2020- Working on all the changes and adding new sections to the paper as suggested by the guide
+
+20/12/2020- Submitting the paper to the Guide and Taking the final review.
+
+25/12/2020- Checking the plag report and make the changes.
+
+27/12/2020- Submitting the paper to Easy Chair conference.
+
+01/01/2021- Re-Review all the changes and complete the work and changes suggested/reported by conference.  
+
+03/01/2021-Update the plag report after completing all the changes suggested by the conference.
+
+04/01/2021- Review all the changes and discuss the paper with Project Guide.
+
+05/01/2021- Submitting the Updated Paper to the Conference.
+
+15/01/2021- Got Mail from Conference about the acceptance of the paper and to prepare for the presentation in the conference.
+
+17/01/2021-Preparing the Camera Ready paper and PPT for Presentation in conference.
+
+20/01/2021- Done with the Presentation in the conference.
+
+23/01/2021- Email properties of servicenow
+
+25/01/2021- Implementing servicenow email properties in the project.
+
+26/01/2021- Taking Review from the Guide about Servicenow implementation
+
+30/01/2021- PPT for Project review
+
+01/02/2021- Preparing for project Review.
+
+06/02/2021- Done with project review and Future scope of the project
+
+08/02/2021-Guide meeting and discussion on extension of project and ideas about further implementation.
+
+09/02/2021- Expansion of Merchant Payments Section for the Menu Of Multi Factor Security protocol.
+
+13/02/2021- Working on JSP page of Merchant Payment.
+
+15/02/2021- Done With JSP page of Merchant Payment & Further extension called merchant connection to both
+            credit card and debit card payments
+
+16/02/2021- Expansion and connection of JSP to Existing Protocol.
+
+20/02/2021- Creation of tables in database and inserting all the data required and establishing a secured connection.
+
+22/02/2021- Implementation of Servicenow for Generation Of OTP & Discussing idea with the guide.
+
+
+23/02/2021- Implementing the ServiceNow OTP generation
+
+27/02/2021- Instance creation and the Email properties were assigned properly and tables creation was done.
+
+01/03/2021- Discussing the idea with the faculty about its expansion and implementation & got a brief about
+            the idea.
+
+02/03/2021- Discussion about the business rules and to know about how the BR works and its properties
+
+06/03/2021- Work on Event Registry and its connection to the existing system and its properties and go with the flow.
+
+08/03/2021- Working on Notifications and its properties creation of Notification for the table that we have created.
+
+09/03/2021- Check the complete Execution of the system and verify it properly with all the details and the content.
+
+12/03/2021- Working on the Research paper for the OTP generation through servicenow.
+
+
+
+
